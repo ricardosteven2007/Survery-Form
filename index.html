@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Feedback Survey</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="container">
     <h1 id="title">Student Feedback Survey</h1>
     <p id="description">Please fill out this short survey to help improve our web development class.</p>
 
-    <form id="survey-form" action="#" method="post">
-
+    <form id="survey-form">
       <div class="form-group">
         <label id="name-label" for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        <input id="name" type="text" placeholder="Enter your name" required>
       </div>
 
       <div class="form-group">
         <label id="email-label" for="email">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Enter your email"
-          required
-        />
+        <input id="email" type="email" placeholder="Enter your email" required>
       </div>
 
       <div class="form-group">
         <label id="number-label" for="number">Age</label>
-        <input
-          id="number"
-          name="age"
-          type="number"
-          min="10"
-          max="120"
-          placeholder="18"
-        />
+        <input id="number" type="number" min="10" max="120" placeholder="18">
       </div>
 
       <div class="form-group">
         <label for="dropdown">Which best describes you?</label>
-        <select id="dropdown" name="role">
+        <select id="dropdown">
           <option value="">Select one</option>
           <option value="student">Student</option>
           <option value="parent">Parent/Guardian</option>
@@ -53,20 +39,20 @@
 
       <fieldset class="form-group">
         <legend>Preferred class time</legend>
-        <label><input type="radio" name="time" value="morning" /> Morning</label>
-        <label><input type="radio" name="time" value="afternoon" /> Afternoon</label>
+        <label><input type="radio" name="time" value="morning"> Morning</label>
+        <label><input type="radio" name="time" value="afternoon"> Afternoon</label>
       </fieldset>
 
       <fieldset class="form-group">
         <legend>Topics you like (check all that apply)</legend>
-        <label><input type="checkbox" name="topics" value="html" /> HTML</label>
-        <label><input type="checkbox" name="topics" value="css" /> CSS</label>
-        <label><input type="checkbox" name="topics" value="javascript" /> JavaScript</label>
+        <label><input type="checkbox" value="html"> HTML</label>
+        <label><input type="checkbox" value="css"> CSS</label>
+        <label><input type="checkbox" value="javascript"> JavaScript</label>
       </fieldset>
 
       <div class="form-group">
         <label for="comments">Additional comments</label>
-        <textarea id="comments" name="comments" rows="4" placeholder="Share any feedback here..."></textarea>
+        <textarea id="comments" rows="4" placeholder="Share any feedback here..."></textarea>
       </div>
 
       <button id="submit" type="submit">Submit</button>
