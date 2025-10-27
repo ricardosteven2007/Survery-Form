@@ -1,7 +1,5 @@
-* { box-sizing: border-box; }
-
 body {
-  margin:0;
+  margin: 0;
   font-family: system-ui, -apple-system, Arial, sans-serif;
   line-height: 1.5;
   background: #f6f7fb;
@@ -11,14 +9,22 @@ body {
   max-width: 720px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background: #ffffff;
+  background: #fff;
   border-radius: 10px;
   border: 1px solid #e6e6ef;
   box-shadow: 0 1px 8px rgba(0,0,0,0.04);
 }
 
-h1 { margin: 0 0 .25rem; text-align: center; }
-#description { text-align: center; margin: 0 0 1.25rem; color: #444; }
+h1 {
+  margin: 0 0 .25rem;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  margin: 0 0 1.25rem;
+  color: #444;
+}
 
 .form-group { margin-bottom: 1rem; }
 
@@ -28,9 +34,7 @@ label {
   margin-bottom: .35rem;
 }
 
-input, select, textarea, button {
-  font: inherit;
-}
+input, select, textarea, button { font: inherit; }
 
 input[type="text"],
 input[type="email"],
@@ -56,7 +60,10 @@ fieldset {
   margin: 0 0 1rem;
 }
 
-legend { font-weight: 700; padding: 0 .25rem; }
+legend {
+  font-weight: 700;
+  padding: 0 .25rem;
+}
 
 fieldset label {
   display: inline-block;
@@ -78,5 +85,8 @@ button {
 button:hover { filter: brightness(.95); }
 
 @media (max-width: 480px) {
-  .container { margin: .75rem; padding: 1rem; }
+  .container {
+    margin: .75rem;
+    padding: 1rem;
+  }
 }
