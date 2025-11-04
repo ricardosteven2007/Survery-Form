@@ -1,62 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Feedback Survey</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="container">
-    <h1 id="title">Student Feedback Survey</h1>
-    <p id="description">Please fill out this short survey to help improve our web development class.</p>
+<link rel="stylesheet" href="styles.css">
+<h1 id="title">Favorite NFL Team</h1>
+<p id="description">Select your favorite NFL team from the list below!</p>
 
-    <form id="survey-form">
-      <div class="form-group">
-        <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-      </div>
+<form id="survey-form">
+  <div class="input-element">
+    <label id="name-label">
+      Name
+    </label>
+    <input placeholder="name" id="name" type="text" required/>
+  </div>
 
-      <div class="form-group">
-        <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
-      </div>
+  <div class="input-element">
+    <label id="email-label">
+      Email
+    </label>
+    <input placeholder="email" id="email" type="email" required/>
+  </div>
 
-      <div class="form-group">
-        <label id="number-label" for="number">Age</label>
-        <input id="number" type="number" min="10" max="120" placeholder="18">
-      </div>
+  <div class="input-element">
+    <label id="number-label">
+      Age
+    </label>
+    <input placeholder="age" id="number" min="6" max="115" type="number" required/>
+  </div>
 
-      <div class="form-group">
-        <label for="dropdown">Which best describes you?</label>
-        <select id="dropdown">
-          <option value="">Select one</option>
-          <option value="student">Student</option>
-          <option value="parent">Parent/Guardian</option>
-          <option value="teacher">Teacher</option>
-        </select>
-      </div>
-
-      <fieldset class="form-group">
-        <legend>Preferred class time</legend>
-        <label><input type="radio" name="time" value="morning"> Morning</label>
-        <label><input type="radio" name="time" value="afternoon"> Afternoon</label>
-      </fieldset>
-
-      <fieldset class="form-group">
-        <legend>Topics you like (check all that apply)</legend>
-        <label><input type="checkbox" value="html"> HTML</label>
-        <label><input type="checkbox" value="css"> CSS</label>
-        <label><input type="checkbox" value="javascript"> JavaScript</label>
-      </fieldset>
-
-      <div class="form-group">
-        <label for="comments">Additional comments</label>
-        <textarea id="comments" rows="4" placeholder="Share any feedback here..."></textarea>
-      </div>
-
-      <button id="submit" type="submit">Submit</button>
-    </form>
-  </main>
-</body>
-</html>
+    <div class="input-element">
+    <label id="select-label">
+      Select your team!
+    </label>
+    <select id="dropdown">
+      <option>Arizona Cardinals</option>
+      <option>Atlanta Falcons</option>
+      <option>Baltimore Ravens</option>
+      <option>Buffalo Bills</option>
+      <option>Carolina Panthers</option>
+      <option>Chicago Bears</option>
+      <option>Cincinatti Bengals</option>
+      <option>Cleveland Browns</option>
+      <option>Dallas Cowboys</option>
+      <option>Denver Broncos</option>
+      <option>Detroit Lions</option>
+      <option>Green Bay Packers</option>
+      <option>Houston Texans</option>
+      <option>Indianapolis Colts</option>
+      <option>Jacksonville Jaguars</option>
+      <option>Kansas City Cheifs</option>
+      <option>Las Vegas Raiders</option>
+      <option>Los Angeles Chargers</option>
+      <option>Los Angeles Rams</option>
+      <option>Miami Dolphins</option>
+      <option>Minnesota Vikings</option>
+      <option>New England Patriots</option>
+      <option>New Orleans Saints</option>
+      <option>New York Giants</option>
+      <option>New York Jets</option>
+      <option>Philadelphia Eagles</option>
+      <option>Pittsburgh Steelers</option>
+      <option>San Francisco 49ers</option>
+      <option>Seattle Seahawks</option>
+      <option>Tampa Bay Buccaneers</option>
+      <option>Tennessee Titans</option>
+      <option>Washington Commanders</option>
+    </select>
+  </div>
+  <div class="input-element">
+    <label>Have you ever been to an NFL game in person?</label>
+    <div>
+      <label><input type="radio" name="game" value="yes" />Yes</label>
+    </div>
+    <div>
+      <label><input type="radio" name="game" value="no"/>No</label>
+    </div>
+    </div>
+    <div class="input-element">
+      <label>
+        What do you own from your favorite team?
+      </label>
+    <div>
+      <label><input type="checkbox" name="merchandise"  value="Jersey"/>Jersey</label>
+    </div>
+    <div>
+      <label><input type="checkbox" name="merchandise"  value="Hat"/>Hat</label>
+    </div>
+    <div>
+      <label><input type="checkbox" name="merchandise"  value="Hoodie"/>Hoodie</label>
+    </div>
+    <div>
+      <label><input type="checkbox" name="merchandise"  value="Poster"/>Poster</label>
+    </div>
+    <div>
+      <label><input type="checkbox" name="merchandise"  value="Other"/>Other</label>
+    </div>
+    </div>
+  <div class="input-element">
+    <label>Additional Commments</label>
+    <textarea type="text"></textarea>
+  </div>
+  <button type="submit" id="submit">
+    Submit
+    </button>
+</form>
